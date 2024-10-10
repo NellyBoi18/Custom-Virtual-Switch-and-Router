@@ -21,7 +21,7 @@ about using your VM.
 Symlink POX and configure the POX modules:
 
 ```bash
-cd ~/POX_ENV
+cd ~/pox_module
 ln -s ../pox
 ./config.sh
 ```
@@ -45,7 +45,7 @@ Open a terminal and start Mininet emulation of a Ethernet network with a single 
 following commands:
 
 ```bash
-$cd ~/POX_ENV/
+$cd ~/pox_module/
 $sudo ./run_mininet.py topos/single_sw.topo -a
 ```
 
@@ -90,7 +90,7 @@ that are required in the next step.
 Open a terminal. Start the controller, by running the following commands:
 
 ```bash
-cd ~/POX_ENV/
+cd ~/pox_module/
 ./run_pox.sh
 ```
 
@@ -127,7 +127,7 @@ Open another terminal, Start Mininet emulation of a Ethernet network with a sing
 following commands:
 
 ```bash
-$cd ~/POX_ENV/
+$cd ~/pox_module/
 $sudo ./run_mininet.py topos/single_sw.topo -a
 ```
 
@@ -139,7 +139,7 @@ Open a third terminal. Compile yourVirtualNetworkimplementation with ant, and st
 on the only switch in this topologys1, by running the following commands:
 
 ```bash
-cd ~/POX_ENV/
+cd ~/pox_module/
 ant
 java -jar VirtualNetwork.jar -v s
 ```
@@ -243,7 +243,7 @@ addresses, IP addresses, or subnet masks.
 ## Testing
 
 You can test the learning switch by following the directions from Part 1. You can use any of the following
-topologies (in the /POX_ENV/toposdirectory):
+topologies (in the /pox_module/toposdirectory):
 
 - singlesw.topo
 - linear5sw.topo
@@ -330,7 +330,7 @@ java -jar VirtualNetwork.jar -v r1 -r rtable.r1 -a arp_cache
 Make sure you already started mininet before hand so that it could generate the routing tablesrtable.rX
 and ARP cachearpcachefor you.
 
-You can use any of the following topologies (in the /POX_ENV/toposdirectory) to test your router:
+You can use any of the following topologies (in the /pox_module/toposdirectory) to test your router:
 
 - singlert.topo
 - pairrt.topo
